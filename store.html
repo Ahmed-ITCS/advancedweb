@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <title>waitrose</title>
+    <script>const searchButton = document.getElementById('search-button');
+        const searchInput = document.getElementById('search-input');
+        searchButton.addEventListener('click', () => {
+          const inputValue = searchInput.value;
+          alert(inputValue);
+        });</script>
+        <style>
+        .form-control{
+            width: 1000px;
+
+        }
+        .nav-link active:hover{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: navy;">
+    <div class="input-group" style="display:flex;flex-direction: row;">
+        <h2 style="color: white;">WAITROSE&nbsp&nbsp</h2>
+        <div class="form-outline"style="display:flex;flex-direction: row;">
+          <input id="search-input" type="search" id="form1" class="form-control" placeholder="what are you looking for" />
+          
+        </div>
+        <button id="search-button" type="button" class="btn btn-primary" style="background-color: orange;">
+          <img src="search.svg">
+        </button>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: navy;">
+        <div class="container-fluid"style="background-color:navy;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: rgb(255, 255, 255);">New Arrival</a>
+                  </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: rgb(255, 255, 255);">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: rgb(255, 255, 255);">RS.99&Below</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(255, 255, 255);">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(255, 255, 255);">Women</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h2>Shopping Cart</h2>
+    <br>
+    <br>
+    <h4>products</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">products</th>
+            <th scope="col">price</th>
+            <th scope="col">quantity</th>
+            <th scope="col">total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img src="1.jpg" width="200px"></th>
+            <td>RS 199.00</td>
+            <td><div class="container py-4">
+                <div class="row">
+                    <div class="col-sm-3 mx-auto">
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                            <span class="input-group-append">
+                                <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div></td>
+            <td>RS 199.00</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="2.jpg" width="200px"></th>
+            <td>RS 171.19</td>
+            <td><div class="container py-4">
+                <h2 class="text-center font-weight-light"></h2>
+                <div class="row">
+                    <div class="col-sm-3 mx-auto">
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                            <span class="input-group-append">
+                                <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div></td>
+            <td>RS 171.19</td>
+          </tr>
+        </tbody>
+      </table>
+
+<div class="card text-end" style="width: 100%;">
+    <div class="card-body">
+      <h5 class="card-title">Subtotal     Rs 370.14</h5>
+      <p class="card-text">Total Savings     Rs 427.86</p>
+    </div>
+  </div>
+    
+</body>
+</html>
